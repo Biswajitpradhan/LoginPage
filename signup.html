@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup here</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+                <h1>OUR Bank</h1>
+        </div>
+        <center>
+            <div id="content">
+                
+                <div id="myform">
+                    <h3>Signup</h3>
+                    <form onsubmit="return validate()" action="Login.html" method="POST">
+                       <label>Enter Username</label><br>
+                       <input type="text" name="user" id="user" placeholder="Enter Username" required><br>
+                       <label>Enter First_Name</label><br>
+                       <input type="text" name="first" id="first" placeholder="Enter Firstname" required><br>
+                       <label>Enter Last_Name</label><br>
+                       <input type="text" name="last" id="last" placeholder="Enter Lastname" required><br>
+                       <label>Enter Password</label><br>
+                       <input type="password" name="pass" id="pass"  placeholder="Enter password" required><br>
+                       <label>Enter Email</label><br>
+                       <input type="email" name="email" id="emil" placeholder="xyz@gmail.com" required><br>
+                       <label>Enter Number</label><br>
+                       <input type="number" name="number" id="number" placeholder="Enter Number" required><br>
+                       <label>Enter Aadhar No</label><br>
+                       <input type="text" name="aadhar" id="aadhar" placeholder="xxxx xxxx xxxx" required><br>
+                       <label>Enter Pan No.</label><br>
+                       <input type="text" name="pan" id="pan" placeholder="31c2r43dg4" required><br>
+                       <label>Enter Age</label><br>
+                       <input type="text" name="age" id="age" placeholder="Enter Age" required><br>
+                       <label>Enter DOB</label><br>
+                       <input type="date" name="dob"  required><br>
+                       <label>Select Country</label><br>
+                        <select required name="country">
+                            <option>--select Country--</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Japan">Japan</option>
+                            <option value="UK">UK</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                        </select>
+                        <label>Select State</label><br>
+                        <select required  name="state">
+                            <option>--select State--</option>
+                            <option value="odisha">Odisha</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Andrapradesh">Andrapradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="chhattisgarh">chhattisgarh</option>
+                        </select>
+                        <label>Enter Address</label><br>
+                        <textarea name="address" id="address" placeholder="Enter Address"></textarea>
+                       <input id="sub" type="submit" value="signup">
+                    </form>
+                </div>
+            </div>
+        </center>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
